@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osherove.LinqToRegex", "Osherove.LinqToRegex\Osherove.LinqToRegex.csproj", "{07DD9336-F690-4169-B9CE-38A5AE764BBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlimFlan.ReadableRex", "ReadableRex\FlimFlan.ReadableRex.csproj", "{7B78F0CF-8366-4DAB-8DB1-212691D21F1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osherove.LinqToRegex.Tests", "LinqToRegex.Tests\Osherove.LinqToRegex.Tests.csproj", "{9B1AD290-3499-4258-ADEE-9AEB9C01D420}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07DD9336-F690-4169-B9CE-38A5AE764BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DD9336-F690-4169-B9CE-38A5AE764BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DD9336-F690-4169-B9CE-38A5AE764BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DD9336-F690-4169-B9CE-38A5AE764BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B78F0CF-8366-4DAB-8DB1-212691D21F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B78F0CF-8366-4DAB-8DB1-212691D21F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B78F0CF-8366-4DAB-8DB1-212691D21F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B78F0CF-8366-4DAB-8DB1-212691D21F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1AD290-3499-4258-ADEE-9AEB9C01D420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1AD290-3499-4258-ADEE-9AEB9C01D420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1AD290-3499-4258-ADEE-9AEB9C01D420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1AD290-3499-4258-ADEE-9AEB9C01D420}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = 
+	EndGlobalSection
+EndGlobal
