@@ -20,11 +20,16 @@ namespace FlimFlan.ReadableRex
         }
     
 
-        public Pattern(string content)
+        public Pattern()
+        {
+            _content = new StringBuilder();
+        }
+
+        internal Pattern(string initialRegexContent)
         {
             //Do we even need this public? Should we force everyone to use Pattern.With syntax?
-            if (content == null) throw new ArgumentNullException("content");
-            _content = new StringBuilder(content);
+            if (initialRegexContent == null) throw new ArgumentNullException("initialRegexContent");
+            _content = new StringBuilder(initialRegexContent);
         }
 
         private string Eval()
@@ -209,7 +214,7 @@ namespace FlimFlan.ReadableRex
         /// <summary>
         /// Specifies that the match must occur at the beginning of the string or the beginning of the line
         /// </summary>
-        public Pattern AtBeginning
+        public Pattern StartsWith
         {
             get
             {
@@ -221,7 +226,7 @@ namespace FlimFlan.ReadableRex
         /// <summary>
         /// Specifies that the match must occur at the end of the string, before \n at the end of the string, or at the end of the line.
         /// </summary>
-        public Pattern AtEnd
+        public Pattern EndOfString
         {
             get
             {

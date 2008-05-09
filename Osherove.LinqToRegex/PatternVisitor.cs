@@ -8,7 +8,7 @@ namespace Osherove.LinqToRegex
 {
     internal class PatternVisitor
     {
-        private Pattern m_pattern = new Pattern("");
+        private Pattern m_pattern = new Pattern();
         private object returnValueFromLastExpressionVisit;
 
         public Pattern VisitExpression(Expression expression)

@@ -29,7 +29,7 @@ namespace Osherove.LinqToRegex.Tests
         public void CanUseSimpleConstructs()
         {
             var query = from match in RegexQuery.Against("sdlfjsfl43r3490r98*(*Email@somewhere.com_dakj3j")
-                        where match.AtBeginning.Literal("s")
+                        where match.StartsWith.Literal("s")
                             .NonDigit.Repeat.AtLeast(3)
                             .Digit
                             .IsTrue()
@@ -46,7 +46,7 @@ namespace Osherove.LinqToRegex.Tests
             var query = from match in RegexQuery.Against("sdlfjsfl43r3490r98*(*Email@somewhere.com_dakj3j")
                         where Pattern.With
                             .NamedGroup("groupa",
-                                        Pattern.With.AtBeginning.Literal("s")
+                                        Pattern.With.StartsWith.Literal("s")
                                             .NonDigit.Repeat.AtLeast(3)
                                             .Digit)
                             .IsTrue()
