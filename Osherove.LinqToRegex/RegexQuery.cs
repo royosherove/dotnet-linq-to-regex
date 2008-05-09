@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq.Expressions;
 using System.Text.RegularExpressions;
 using FlimFlan.ReadableRex;
-using LinqToAnything.Demos;
 
 namespace Osherove.LinqToRegex
 {
     public class RegexQuery:IEnumerable<Match>
     {
         private readonly string input;
-        private object lastPatternRetVal;
+
         private RegexQuery(string input)
         {
             this.input = input;
@@ -29,10 +27,6 @@ namespace Osherove.LinqToRegex
             return this;
         }
 
-        public RegexQuery Select<T>(Expression<Func<Pattern,T>> selector)
-        {
-            return this;
-        }
         #region IEnumerable Members
 
         IEnumerator IEnumerable.GetEnumerator()
